@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.div1, .div2, .div3{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    margin-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    margin-right: 20px;
+    
+}
+
+.div1:hover{
+    background-color: red;
+    text-align: right;
+}
+
+.div2:hover{
+    background-color: green;
+    text-align: right;
+}
+
+.div3:hover{
+    background-color: blue;
+    text-align: right;
+}
+
+
+.principal{
+display:flex;
+border-color: black;
+margin: 20px;
+background-color: blue;
+/* justify-content: around; */
+
+}
+
+
+p{
+    background-color: plum;
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    font-size: 80PX;
+
+}
+
+
+#container{
+    background-color: blueviolet;
+    display: flex;
+    justify-content:center;
+    height: 200px;
+
+    /* Alinhamento Horizontal */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+
+    /* Alinhamento Vertical */
+    /* align-items: end; */
+    /* align-items: stretch; */
+    align-items: center;
+
+}
+
+
+.item{
+    background-color: lightpink;
+    padding: 5px;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+
+
+

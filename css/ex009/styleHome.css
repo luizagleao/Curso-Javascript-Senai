@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    height: 100px;
+    align-items: center;
+
+}
+
+nav {
+    width: 450px;
+}
+
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+section {
+    background-color: lightblue;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    background-color: lightgray;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

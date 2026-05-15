@@ -1,0 +1,29 @@
+/* Para estilizar IDs, usamos "#"
+Para estilizar Classes, usamos "." */
+
+h1#tituloPrincipal{
+    background-color: aqua;
+}
+
+h1{
+    background-color: blueviolet ;
+}
+
+
+.basico{
+
+    color: rgb(163, 163, 9);
+}
+
+.intermediario{
+    color: red;
+ 
+}
+
+.avancado{
+    color: green;
+}
+
+.formato{
+    text-align: center;
+}

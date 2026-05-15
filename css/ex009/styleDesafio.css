@@ -1,0 +1,45 @@
+.principal {
+    display: flex;
+    margin: 20px;
+    background-color: rgb(185, 44, 44);
+}
+
+
+.item {
+    background-color: rgb(110, 164, 211);
+    border-color: 3px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+
+#bloco1 {
+    justify-content: left;
+}
+
+#bloco2 {
+ 
+    justify-content: right;
+}
+
+#bloco3{
+ 
+    justify-content: center;
+}
+
+#bloco4  {
+   
+    justify-content: space-between;
+}
+
+#bloco5  {
+
+    justify-content: space-evenly;
+}
+
+#bloco6  {
+
+    justify-content: space-around;
+}
+
+
