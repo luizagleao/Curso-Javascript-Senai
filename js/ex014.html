@@ -6,8 +6,10 @@
     <title>Document</title>
 </head>
 <body>
+    <h1> Somar valores </h1>
     
     <input type="number" name="numero1" id="numero1">
+    <span>+</span>
     <input type="number" name="numero2" id="numero2">
 
 
@@ -38,7 +40,7 @@
 
 
             let paragrafo = document.getElementById('resultado')
-            paragrafo.innerHTML= soma
+            paragrafo.innerHTML= `O resultado é <strong> ${soma}</strong>`
         }
 
 

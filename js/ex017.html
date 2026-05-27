@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+
+<style>
+
+   label{
+    display: block;
+   }
+
+   .radios{
+    display: flex;
+    padding: 2px;
+   }
+
+</style>
+
+<body>
+
+    <h1>Trabalhando com Formularios</h1>
+
+
+
+    <form method="post"> 
+        
+        <div class="informacoesPessoais">
+            <label for="nome"> Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+            
+    
+    
+            <label for="idade"> Idade:</label>
+            <input type="number" name="idade" id="idade" required step="0.01">
+            
+    
+            <label for="email"> E-mail:</label>
+            <input type="text" name="email" id="email" required>
+
+        </div>
+
+        <div class="radios">
+
+            <label for="solteiro"> Solteiro </label>
+            <input type="radio" name="solteiro" id="solteiro" >
+    
+    
+            <label for="casado"> Casado </label>
+            <input type="radio" name="casado" id="casado" >
+    
+            <label for="viuvo"> viuvo </label>
+            <input type="radio" name="viuvo" id="viuvo" >
+        </div>
+
+
+        <div class="radios">
+
+            <label for="natacao"> Natação </label>
+            <input type="checkbox" name="natacao" id="natacao">
+    
+    
+            <label for="boxe"> Boxe </label>
+            <input type="checkbox" name="boxe" id="boxe">
+    
+            <label for="viuvo"> Futebol </label>
+            <input type="checkbox" name="boxe" id="boxe">
+
+        </div>
+
+        <button type="submit">
+            Enviar
+        </button>
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>
