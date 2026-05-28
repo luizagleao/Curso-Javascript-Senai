@@ -9,68 +9,127 @@
 
 
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
 
-   label{
-    display: block;
-   }
+    }
 
-   .radios{
-    display: flex;
-    padding: 2px;
-   }
+    label {
+        display: flex;
+    }
 
+    .radios {
+        display: flex;
+        padding: 2px;
+    }
+
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 2px 3px 4px rgb(207, 110, 110);
+    }
+
+
+    form {
+        background-color: antiquewhite;
+        width: 300px;
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: 0px 0px 10 black;
+        padding: 35px;
+
+
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(69, 146, 214);
+        color: aliceblue;
+        margin-top: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .radio,
+    .checkbox {
+        width: 10%;
+        box-shadow: none;
+    }
+
+
+    input:focus {
+        outline: none;
+        box-shadow: 2px 3px 4px rgb(62, 175, 17);
+        ;
+    }
+
+
+    button:hover {
+        background-color: blueviolet;
+    }
 </style>
 
 <body>
 
-    <h1>Trabalhando com Formularios</h1>
 
 
 
-    <form method="post"> 
-        
-        <div class="informacoesPessoais">
-            <label for="nome"> Nome:</label>
-            <input type="text" name="nome" id="nome" required>
-            
-    
-    
-            <label for="idade"> Idade:</label>
-            <input type="number" name="idade" id="idade" required step="0.01">
-            
-    
-            <label for="email"> E-mail:</label>
-            <input type="text" name="email" id="email" required>
+    <form id="form">
 
-        </div>
+        <h1>Trabalhando com Formularios</h1>
 
-        <div class="radios">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
 
-            <label for="solteiro"> Solteiro </label>
-            <input type="radio" name="solteiro" id="solteiro" >
-    
-    
-            <label for="casado"> Casado </label>
-            <input type="radio" name="casado" id="casado" >
-    
-            <label for="viuvo"> viuvo </label>
-            <input type="radio" name="viuvo" id="viuvo" >
-        </div>
+        <label for="idade">Idade: </label>
+        <input type="number" name="idade" id="idade" min="5" max="10" required>
+
+        <label for="">Notas: </label>
+        <input type="number" name="notas" id="notas" min="0" max="10" step="0.1">
+
+        <label for="password">Senha: </label>
+        <input type="password" name="" id="password">
+
+        <label for="">Email:</label>
+        <input type="email" name="email" id="email" required>
 
 
-        <div class="radios">
 
-            <label for="natacao"> Natação </label>
-            <input type="checkbox" name="natacao" id="natacao">
-    
-    
-            <label for="boxe"> Boxe </label>
-            <input type="checkbox" name="boxe" id="boxe">
-    
-            <label for="viuvo"> Futebol </label>
-            <input type="checkbox" name="boxe" id="boxe">
 
-        </div>
+
+        <label for="solteiro"> Estado civil </label>
+        <input class="radio" type="radio" name="status" id="solteiro"> Casado
+        <input class="radio" type="radio" name="status" id="casado"> Solteiro
+        <input class="radio" type="radio" name="status" id="viuvo"> Viuvo
+
+
+
+
+
+
+
+
+
+        <label for="natacao"> Atividades </label>
+        <input class="checkbox" type="checkbox" name="natacao" id="natacao"> Natação
+        <input class="checkbox" type="checkbox" name="boxe" id="boxe"> Boxe
+        <input class="checkbox" type="checkbox" name="bike" id="bike"> Bike
+
+
 
         <button type="submit">
             Enviar
@@ -83,5 +142,34 @@
     </form>
 
 </body>
+
+
+
+
+
+<script>
+    let form = document.getElementById('form')
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+        console.log(`O submit aconteceu`)
+    })
+
+
+    let nomeUsuario = document.getElementById('nome').value
+    alert("Enviado")
+
+
+    let body = document.querySelector(`body`)
+    body.addEventListener('keypress', function (event) {
+        if (event.key == 'f') {
+            console.log(" A tecla f foi digitada")
+        }
+    })
+
+
+
+
+
+</script>
 
 </html>

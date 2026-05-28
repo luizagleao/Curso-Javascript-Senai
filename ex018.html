@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+    }
+
+    body{
+        display: flex;
+        margin: 200px;
+    }
+    
+
+
+    #form{
+        background-color: rgb(31, 197, 197);
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        padding: 20px;
+    }
+
+    label{
+        color: aliceblue;
+        font-family:'Times New Roman', Times, serif;
+        padding-bottom: 20px;
+    }
+
+    input{
+       
+        width: 100%;
+        border-radius: 10px;
+        height: 30px;
+
+    }
+
+    button{
+        margin: 20px;
+    }
+</style>
+
+<body >
+
+
+   
+
+        <form id="form">
+    
+            <h1>Login</h1>
+    
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" required>
+    
+            <label for="senha">Senha: </label>
+            <input type="text" name="senha" id="senha" required>
+    
+    
+            <button type="submit">
+                Enviar
+            </button>
+    
+    
+    
+        </form>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+<script>
+
+    let emailUsuario = "luiza@gmail.com"
+    let senhaUsuario = "12345"
+
+    let form = document.getElementById('form')
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+        console.log(`O submit aconteceu`)
+
+    let emailUsuarioDigitado = document.getElementById('email').value
+    let senhaUsuarioDigitado = document.getElementById('senha').value
+    console.log(emailUsuarioDigitado)
+    console.log(senhaUsuarioDigitado)
+
+
+    if ( emailUsuarioDigitado == emailUsuario && senhaUsuarioDigitado ==senhaUsuario){
+        console.log ("dados certo")
+        window.location.href = 'paginaNova.html'
+    }
+     
+    })
+
+
+
+
+
+</script>
+
+</html>
